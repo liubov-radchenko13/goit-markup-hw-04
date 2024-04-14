@@ -23,7 +23,7 @@ img{
     margin: 0 auto;
 }
 .header{
-    box-sizing:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     border-bottom: 1px solid #e7e9fc;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -61,23 +61,43 @@ img{
     font-weight: 700;
     font-size: 18px;
      line-height: 21px; 
-    line-height: 1.16667;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
+    position: relative;
+    color: #404bbf;
+
+}
+.logo::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+    border: #404bbf;
 }
 .current{
     position: relative;
     color: #404bbf;
     background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+    .curren::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        background-color: #404bbf;
+        border-radius: 2px;
+        height: 4px;
+        width: 100%;
+    }
 .logo-part{
     color: #2e2f42;
-}
-.transition{
-    background-color: 250ms
-    cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list{
     display: flex;
@@ -102,20 +122,12 @@ img{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.current::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    background-color: #404bbf;
-    border-radius: 2px;
-    height: 4px;
-    width: 100%;
-}
 .nav-link:hover,
 .nav-link:focus{
     color: #404bbf;
+}
+.ule{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .address{
 font-style: normal;
