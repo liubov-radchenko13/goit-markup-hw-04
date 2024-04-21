@@ -252,6 +252,8 @@ img{
     background: #f4f4fd;
     padding: 120px 0;
     width: 100%;
+    padding-left: 156px;
+    padding-right: 156px;
 }
 
 .team-title {
@@ -370,7 +372,8 @@ img{
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-item {
